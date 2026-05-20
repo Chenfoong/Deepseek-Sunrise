@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Education — Where Children Smile, Learn & Grow Happily ☀️</title>
+    <meta name="description" content="Sunrise Education — A Premium International School & Homeschooling Platform offering Cambridge IGCSE for ages 7–18 in Malaysia. Happy Learning, Character Growth, Academic Excellence, Future Readiness.">
+    <meta name="keywords" content="Sunrise Education, Cambridge IGCSE, Homeschooling Malaysia, International School Klang, Sunrise Homeschool, Sunrise Primary, Sunrise Secondary">
+    <meta property="og:title" content="Sunrise Education — Where Children Smile, Learn & Grow Happily">
+    <meta property="og:description" content="A Warm International Homeschooling Environment for Future Leaders, Creative Thinkers & Happy Learners in Malaysia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sun.edu.my">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #1A1A1A;
+            --bg-secondary: #222225;
+            --bg-card: #252529;
+            --bg-glass: rgba(26, 26, 26, 0.75);
+            --text-primary: #FFFDF7;
+            --text-secondary: #c9c7c0;
+            --text-muted: #a09d95;
+            --gold: #FDB813;
+            --gold-hover: #e5a60f;
+            --sky-blue: #A8D8FF;
+            --soft-orange: #FFB347;
+            --soft-orange-hover: #f09d2e;
+            --border-subtle: rgba(255, 253, 247, 0.08);
+            --border-card: rgba(255, 253, 247, 0.1);
+            --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+            --shadow-glow-gold: 0 0 40px rgba(253, 184, 19, 0.25);
+            --shadow-glow-blue: 0 0 30px rgba(168, 216, 255, 0.2);
+            --glass-blur: blur(18px);
+            --dock-bg: rgba(30, 30, 34, 0.85);
+            --nav-bg: rgba(22, 22, 25, 0.8);
+            --particle-color: rgba(253, 184, 19, 0.7);
+            --gradient-hero: linear-gradient(180deg, #1a1a1a 0%, #1f1c14 40%, #1a1a1a 100%);
+            --accent-soft: rgba(253, 184, 19, 0.08);
+            --input-bg: #2a2a2e;
+            --toast-bg: #2e2e32;
+            --overlay: rgba(0, 0, 0, 0.6);
+            --card-hover-bg: #2a2a30;
+            --icon-filter: none;
+            --logo-brightness: 1;
+        }
+        [data-theme="light"] {
+            --bg-primary: #fafaf7;
+            --bg-secondary: #f0efe9;
+            --bg-card: #ffffff;
+            --bg-glass: rgba(255, 255, 252, 0.8);
+            --text-primary: #1a1a1a;
+            --text-secondary: #3d3d3a;
+            --text-muted: #6b6b65;
+            --gold: #d4990c;
+            --gold-hover: #b8820a;
+            --sky-blue: #5b9fd4;
+            --soft-orange: #e8942a;
+            --soft-orange-hover: #d07e1e;
+            --border-subtle: rgba(0, 0, 0, 0.06);
+            --border-card: rgba(0, 0, 0, 0.1);
+            --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-glow-gold: 0 0 30px rgba(212, 153, 12, 0.18);
+            --shadow-glow-blue: 0 0 24px rgba(91, 159, 212, 0.15);
+            --glass-blur: blur(16px);
+            --dock-bg: rgba(255, 255, 250, 0.88);
+            --nav-bg: rgba(255, 255, 250, 0.82);
+            --particle-color: rgba(212, 153, 12, 0.55);
+            --gradient-hero: linear-gradient(180deg, #fafaf7 0%, #fdf5e6 40%, #fafaf7 100%);
+            --accent-soft: rgba(212, 153, 12, 0.06);
+            --input-bg: #f5f5f0;
+            --toast-bg: #f9f9f5;
+            --overlay: rgba(0, 0, 0, 0.35);
+            --card-hover-bg: #fcfcf9;
+            --icon-filter: none;
+            --logo-brightness: 0.85;
+        }
+        [data-theme="warm"] {
+            --bg-primary: #1f1b14;
+            --bg-secondary: #272218;
+            --bg-card: #2c261a;
+            --bg-glass: rgba(31, 27, 20, 0.78);
+            --text-primary: #fef9ee;
+            --text-secondary: #d4cebd;
+            --text-muted: #a89f8a;
+            --gold: #FDB813;
+            --gold-hover: #e5a60f;
+            --sky-blue: #c9e4ff;
+            --soft-orange: #FFB347;
+            --soft-orange-hover: #f09d2e;
+            --border-subtle: rgba(254, 249, 238, 0.07);
+            --border-card: rgba(254, 249, 238, 0.1);
+            --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.45);
+            --shadow-glow-gold: 0 0 45px rgba(253, 184, 19, 0.3);
+            --shadow-glow-blue: 0 0 28px rgba(201, 228, 255, 0.18);
+            --glass-blur: blur(18px);
+            --dock-bg: rgba(35, 30, 20, 0.86);
+            --nav-bg: rgba(28, 24, 16, 0.82);
+            --particle-color: rgba(253, 184, 19, 0.75);
+            --gradient-hero: linear-gradient(180deg, #1f1b14 0%, #2a2216 40%, #1f1b14 100%);
+            --accent-soft: rgba(253, 184, 19, 0.1);
+            --input-bg: #2f2a1e;
+            --toast-bg: #302b1f;
+            --overlay: rgba(0, 0, 0, 0.6);
+            --card-hover-bg: #312a1c;
+            --icon-filter: none;
+            --logo-brightness: 1;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        body {
+            font-family: 'Nunito', 'Noto Sans SC', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background 0.4s ease, color 0.4s ease;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 90px;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', 'Noto Sans SC', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        @media(min-width:768px) {
+            .container {
+                padding: 0 32px;
+            }
+        }
+
+        /* Glass Navigation */
+        .glass-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--nav-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.4s ease;
+            padding: 10px 0;
+        }
+        .glass-nav.scrolled {
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            padding: 6px 0;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .nav-logo {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--gold);
+            white-space: nowrap;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-logo .logo-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 12px var(--gold);
+            animation: logoPulse 2s infinite;
+        }
+        @keyframes logoPulse {
+            0%,
+            100% {
+                box-shadow: 0 0 8px var(--gold);
+            }
+            50% {
+                box-shadow: 0 0 22px var(--gold), 0 0 40px rgba(253, 184, 19, 0.5);
+            }
+        }
+        .nav-links {
+            display: none;
+            gap: 6px;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .nav-links a {
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: var(--accent-soft);
+            color: var(--gold);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .icon-btn:hover {
+            background: var(--card-hover-bg);
+            border-color: var(--gold);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .theme-menu {
+            position: relative;
+        }
+        .theme-dropdown {
+            position: absolute;
+            top: 44px;
+            right: 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 6px;
+            display: none;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 120px;
+            box-shadow: var(--shadow-card);
+            z-index: 200;
+        }
+        .theme-dropdown.open {
+            display: flex;
+        }
+        .theme-dropdown button {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .theme-dropdown button:hover,
+        .theme-dropdown button.active-theme {
+            background: var(--accent-soft);
+            color: var(--gold);
+        }
+        .lang-toggle {
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            color: var(--text-primary);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+        .lang-toggle:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        @media(min-width:900px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        /* Floating Dock */
+        .floating-dock {
+            position: fixed;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 110;
+            background: var(--dock-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--border-card);
+            border-radius: 28px;
+            padding: 8px 14px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease;
+        }
+        .dock-item {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            background: transparent;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .dock-item:hover,
+        .dock-item.active {
+            background: var(--accent-soft);
+            color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .dock-item.ai-dock {
+            background: var(--gold);
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 1.4rem;
+            animation: aiGlow 2.5s infinite;
+        }
+        @keyframes aiGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 12px rgba(253, 184, 19, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 28px rgba(253, 184, 19, 0.8), 0 0 50px rgba(253, 184, 19, 0.4);
+            }
+        }
+        .dock-label {
+            display: none;
+            font-size: 0.7rem;
+            font-weight: 600;
+            white-space: nowrap;
+            color: var(--text-muted);
+        }
+        @media(min-width:500px) {
+            .floating-dock {
+                gap: 2px;
+                padding: 8px 18px;
+                border-radius: 30px;
+            }
+            .dock-item {
+                width: 48px;
+                height: 48px;
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--gradient-hero);
+            overflow: hidden;
+            padding: 100px 20px 60px;
+        }
+        #particleCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 24px;
+            background: var(--accent-soft);
+            border: 1px solid rgba(253, 184, 19, 0.25);
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            animation: fadeInUp 0.8s ease 0.15s both;
+            background: linear-gradient(135deg, var(--text-primary) 30%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            animation: fadeInUp 0.8s ease 0.3s both;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            animation: fadeInUp 0.8s ease 0.45s both;
+        }
+        .btn {
+            padding: 14px 24px;
+            border-radius: 28px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: #1a1a1a;
+            box-shadow: 0 4px 18px rgba(253, 184, 19, 0.35);
+        }
+        .btn-gold:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(253, 184, 19, 0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--border-card);
+            color: var(--text-primary);
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .btn-orange {
+            background: var(--soft-orange);
+            color: #1a1a1a;
+            box-shadow: 0 4px 16px rgba(255, 179, 71, 0.3);
+        }
+        .btn-orange:hover {
+            background: var(--soft-orange-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 179, 71, 0.45);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media(min-width:768px) {
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .btn {
+                padding: 16px 28px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 0;
+            position: relative;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        .section-header .accent-line {
+            width: 50px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+            margin: 0 auto 12px;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        @media(min-width:768px) {
+            .section-header h2 {
+                font-size: 2.5rem;
+            }
+            .section {
+                padding: 80px 0;
+            }
+        }
+
+        /* Stat Strip */
+        .stat-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 0 20px;
+        }
+        .stat-item .stat-num {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gold);
+        }
+        .stat-item .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media(min-width:600px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media(min-width:900px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 28px 22px;
+            transition: all 0.35s;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card), var(--shadow-glow-gold);
+            border-color: rgba(253, 184, 19, 0.3);
+            background: var(--card-hover-bg);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Testimonial Carousel */
+        .testimonial-scroll {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 10px 0 20px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .testimonial-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .testimonial-card {
+            min-width: 280px;
+            max-width: 380px;
+            flex-shrink: 0;
+            scroll-snap-align: start;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 24px;
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover {
+            border-color: rgba(253, 184, 19, 0.3);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .testimonial-card .quote {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .testimonial-card .author {
+            font-weight: 700;
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        /* Accordion FAQ */
+        .accordion {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .accordion-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .accordion-item.active {
+            border-color: rgba(253, 184, 19, 0.4);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .accordion-header {
+            padding: 18px 20px;
+            cursor: pointer;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            user-select: none;
+        }
+        .accordion-header .acc-icon {
+            transition: transform 0.3s;
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
+        .accordion-item.active .acc-icon {
+            transform: rotate(180deg);
+        }
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .accordion-item.active .accordion-body {
+            max-height: 300px;
+            padding: 0 20px 18px;
+        }
+
+        /* Contact Hub */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media(min-width:500px) {
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .contact-btn-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 20px;
+            border-radius: 18px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+        .contact-btn-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-glow-gold);
+            transform: translateY(-3px);
+        }
+        .contact-btn-card .c-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-card);
+            margin-top: 24px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 280px;
+            border: none;
+        }
+
+        /* AI Chat Widget */
+        .ai-chat-modal {
+            position: fixed;
+            bottom: 100px;
+            right: 16px;
+            width: 340px;
+            max-width: calc(100vw - 32px);
+            max-height: 480px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+            z-index: 120;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .ai-chat-modal.open {
+            display: flex;
+        }
+        .ai-chat-header {
+            padding: 16px 18px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-subtle);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        .ai-chat-header .close-chat {
+            margin-left: auto;
+            background: transparent;
+            color: var(--text-muted);
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        .ai-chat-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.9rem;
+            max-height: 300px;
+        }
+        .ai-msg {
+            padding: 10px 14px;
+            border-radius: 16px;
+            max-width: 85%;
+            line-height: 1.5;
+        }
+        .ai-msg.bot {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+        .ai-msg.user {
+            background: var(--gold);
+            color: #1a1a1a;
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+            font-weight: 600;
+        }
+        .ai-chat-input-row {
+            display: flex;
+            gap: 8px;
+            padding: 12px 16px;
+            border-top: 1px solid var(--border-subtle);
+        }
+        .ai-chat-input-row input {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 24px;
+            border: 1px solid var(--border-card);
+            background: var(--input-bg);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .ai-chat-input-row input:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(253, 184, 19, 0.1);
+        }
+        .ai-chat-input-row button {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--toast-bg);
+            border: 1px solid var(--border-card);
+            border-radius: 24px;
+            padding: 12px 22px;
+            z-index: 200;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-card);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s;
+            color: var(--text-primary);
+        }
+        .toast.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin: 20px 0;
+            list-style: none;
+        }
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Admissions Steps */
+        .steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            list-style: none;
+            counter-reset: step;
+        }
+        .steps-list li {
+            counter-increment: step;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-card);
+            transition: all 0.3s;
+        }
+        .steps-list li:hover {
+            border-color: rgba(253, 184, 19, 0.35);
+            box-shadow: var(--shadow-glow-gold);
+        }
+        .steps-list li .step-num {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: #1a1a1a;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .steps-list li h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        .steps-list li p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Subject cards */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+        @media(min-width:600px) {
+            .subject-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media(min-width:900px) {
+            .subject-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .subject-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 20px 16px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .subject-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-glow-gold);
+            transform: translateY(-4px);
+            color: var(--gold);
+        }
+        .subject-card .subj-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Overlay */
+        .overlay-bg {
+            position: fixed;
+            inset: 0;
+            background: var(--overlay);
+            z-index: 115;
+            display: none;
+        }
+        .overlay-bg.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Overlay -->
+    <div class="overlay-bg" id="overlayBg"></div>
+
+    <!-- Glass Navigation -->
+    <nav class="glass-nav" id="glassNav">
+        <div class="container nav-inner">
+            <a href="#home" class="nav-logo">
+                <span class="logo-dot"></span> Sunrise
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#academic" data-i18n="nav_academic">Academic</a></li>
+                <li><a href="#admissions" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="#vision" data-i18n="nav_vision">Vision</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" title="Switch Language">EN</button>
+                <div class="theme-menu">
+                    <button class="icon-btn" id="themeBtn" title="Theme">🌓</button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <button data-theme="dark" class="active-theme">🌙 Dark</button>
+                        <button data-theme="light">☀️ Light</button>
+                        <button data-theme="warm">🔥 Warm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">🌟 Admissions Open 2026</div>
+            <h1 data-i18n="hero_headline">Where Children Smile, Learn & Grow Happily ☀️</h1>
+            <p data-i18n="hero_sub">A Warm International Homeschooling Environment for Future Leaders, Creative Thinkers & Happy Learners.</p>
+            <div class="hero-ctas">
+                <a href="#academic" class="btn btn-gold" data-i18n="hero_btn_explore">📚 Explore Programs</a>
+                <a href="#admissions" class="btn btn-orange" data-i18n="hero_btn_admissions">🎓 Admissions Open 2026</a>
+                <button class="btn btn-outline" onclick="openAIChat()" data-i18n="hero_btn_ai">💬 Chat With AI</button>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">📞 Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat Strip -->
+    <div class="stat-strip reveal">
+        <div class="stat-item"><div class="stat-num" data-i18n="stat_age">7–18</div><div class="stat-label" data-i18n="stat_age_label">Years Old</div></div>
+        <div class="stat-item"><div class="stat-num" data-i18n="stat_igcse">IGCSE</div><div class="stat-label" data-i18n="stat_igcse_label">Cambridge</div></div>
+        <div class="stat-item"><div class="stat-num" data-i18n="stat_small">1:8</div><div class="stat-label" data-i18n="stat_small_label">Small Classroom</div></div>
+        <div class="stat-item"><div class="stat-num" data-i18n="stat_future">AI+</div><div class="stat-label" data-i18n="stat_future_label">Future‑Ready</div></div>
+    </div>
+
+    <!-- Happiness Learning Growth -->
+    <section class="section reveal" id="pillars">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="pillars_heading">Happiness · Learning · Growth</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="pillars_sub">Our four core pillars shape every child's journey at Sunrise.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card"><span class="card-icon">😊</span><h3 data-i18n="pillar1_title">Happy Learning</h3><p data-i18n="pillar1_desc">Joy-filled classrooms where curiosity thrives and every child feels safe to explore, ask, and grow.</p></div>
+                <div class="card"><span class="card-icon">🌱</span><h3 data-i18n="pillar2_title">Character Growth</h3><p data-i18n="pillar2_desc">Building integrity, empathy, and resilience through guided mentorship and real-world values.</p></div>
+                <div class="card"><span class="card-icon">🏆</span><h3 data-i18n="pillar3_title">Academic Excellence</h3><p data-i18n="pillar3_desc">Cambridge IGCSE pathway with personalized coaching that unlocks every learner's full potential.</p></div>
+                <div class="card"><span class="card-icon">🚀</span><h3 data-i18n="pillar4_title">Future Readiness</h3><p data-i18n="pillar4_desc">AI literacy, critical thinking, and innovation skills for a rapidly changing world.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Parents Choose Sunrise -->
+    <section class="section reveal" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="why_heading">Why Parents Choose Sunrise</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="why_sub">Caring teachers, personalized education, and a truly happy environment.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card"><span class="card-icon">👩‍🏫</span><h3 data-i18n="why1_title">Caring Teachers</h3><p data-i18n="why1_desc">Dedicated educators who know each child by name, strength, and story.</p></div>
+                <div class="card"><span class="card-icon">📋</span><h3 data-i18n="why2_title">Personalized Education</h3><p data-i18n="why2_desc">Custom learning paths that honor individual pace, interests, and goals.</p></div>
+                <div class="card"><span class="card-icon">🌍</span><h3 data-i18n="why3_title">International Curriculum</h3><p data-i18n="why3_desc">Globally recognized Cambridge IGCSE that opens doors worldwide.</p></div>
+                <div class="card"><span class="card-icon">🏡</span><h3 data-i18n="why4_title">Happy Environment</h3><p data-i18n="why4_desc">A warm, nurturing space where children genuinely love coming to school.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Life -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="life_heading">Beyond Textbooks & Exams</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="life_sub">Art, science, creativity, friendship — a vibrant student life awaits.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card"><span class="card-icon">🎨</span><h3 data-i18n="life1_title">Art & Creativity</h3><p data-i18n="life1_desc">Expressive arts, design thinking, and creative projects that spark imagination.</p></div>
+                <div class="card"><span class="card-icon">🔬</span><h3 data-i18n="life2_title">Science Exploration</h3><p data-i18n="life2_desc">Hands-on experiments, STEM challenges, and curious discovery.</p></div>
+                <div class="card"><span class="card-icon">🤝</span><h3 data-i18n="life3_title">Friendship & Community</h3><p data-i18n="life3_desc">Collaborative activities that build lasting bonds and social confidence.</p></div>
+                <div class="card"><span class="card-icon">🧠</span><h3 data-i18n="life4_title">Critical Thinking</h3><p data-i18n="life4_desc">Debate, problem-solving, and communication skills for real-world success.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section reveal" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="testimonials_heading">Parent Testimonials</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="testimonials_sub">Hear from families who've found their home at Sunrise.</p>
+            </div>
+            <div class="testimonial-scroll">
+                <div class="testimonial-card"><p class="quote" data-i18n="testimonial1_quote">"Sunrise gave my daughter the confidence to speak up and love learning again. The teachers are truly exceptional."</p><p class="author" data-i18n="testimonial1_author">— Mrs. Lim, Klang</p></div>
+                <div class="testimonial-card"><p class="quote" data-i18n="testimonial2_quote">"The Cambridge IGCSE pathway here is outstanding. My son is thriving academically and socially."</p><p class="author" data-i18n="testimonial2_author">— Mr. Tan, Shah Alam</p></div>
+                <div class="testimonial-card"><p class="quote" data-i18n="testimonial3_quote">"Small class sizes mean my child gets the attention she needs. The environment is so warm and welcoming."</p><p class="author" data-i18n="testimonial3_author">— Pn. Aisyah, Klang</p></div>
+                <div class="testimonial-card"><p class="quote" data-i18n="testimonial4_quote">"We love the AI learning integration. It's preparing our children for the future in the best way possible."</p><p class="author" data-i18n="testimonial4_author">— Mr. & Mrs. Chen, Petaling Jaya</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Page -->
+    <section class="section reveal" id="academic">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="academic_heading">Cambridge International Education</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="academic_sub">Globally recognized IGCSE curriculum designed for holistic excellence.</p>
+            </div>
+            <div class="subject-grid">
+                <div class="subject-card"><span class="subj-icon">📖</span><span data-i18n="subj_english">English</span></div>
+                <div class="subject-card"><span class="subj-icon">📐</span><span data-i18n="subj_math">Mathematics</span></div>
+                <div class="subject-card"><span class="subj-icon">🔬</span><span data-i18n="subj_science">Science</span></div>
+                <div class="subject-card"><span class="subj-icon">🧬</span><span data-i18n="subj_biology">Biology</span></div>
+                <div class="subject-card"><span class="subj-icon">⚗️</span><span data-i18n="subj_chemistry">Chemistry</span></div>
+                <div class="subject-card"><span class="subj-icon">⚡</span><span data-i18n="subj_physics">Physics</span></div>
+                <div class="subject-card"><span class="subj-icon">💻</span><span data-i18n="subj_ict">ICT / Computer Studies</span></div>
+                <div class="subject-card"><span class="subj-icon">📜</span><span data-i18n="subj_history">History</span></div>
+                <div class="subject-card"><span class="subj-icon">🗺️</span><span data-i18n="subj_geography">Geography</span></div>
+                <div class="subject-card"><span class="subj-icon">🎨</span><span data-i18n="subj_art">Art & Creativity</span></div>
+                <div class="subject-card"><span class="subj-icon">🗣️</span><span data-i18n="subj_languages">Language Programmes</span></div>
+                <div class="subject-card"><span class="subj-icon">🎯</span><span data-i18n="subj_personalized">Personalized Paths</span></div>
+            </div>
+            <div class="section-header" style="margin-top:50px;"><h3 data-i18n="faq_heading">Frequently Asked Questions</h3><div class="accent-line"></div></div>
+            <div class="accordion">
+                <div class="accordion-item"><div class="accordion-header"><span data-i18n="faq1_q">What is the Cambridge IGCSE?</span> <span class="acc-icon">▼</span></div><div class="accordion-body" data-i18n="faq1_a">The Cambridge IGCSE is the world's most popular international qualification for 14–16 year olds. It is recognized by leading universities and employers worldwide.</div></div>
+                <div class="accordion-item"><div class="accordion-header"><span data-i18n="faq2_q">What ages do you accept?</span> <span class="acc-icon">▼</span></div><div class="accordion-body" data-i18n="faq2_a">We welcome students from ages 7 to 18, covering primary through secondary education with the Cambridge pathway.</div></div>
+                <div class="accordion-item"><div class="accordion-header"><span data-i18n="faq3_q">How small are the classes?</span> <span class="acc-icon">▼</span></div><div class="accordion-body" data-i18n="faq3_a">Our classes maintain a maximum 1:8 teacher-to-student ratio, ensuring every child receives personalized attention.</div></div>
+                <div class="accordion-item"><div class="accordion-header"><span data-i18n="faq4_q">Do you offer trial classes?</span> <span class="acc-icon">▼</span></div><div class="accordion-body" data-i18n="faq4_a">Yes! We encourage families to book a trial class so your child can experience our warm learning environment firsthand.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Page -->
+    <section class="section reveal" id="admissions" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="admissions_heading">Begin Your Child's Learning Journey</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="admissions_sub">5 simple steps to enrollment at Sunrise Education.</p>
+            </div>
+            <ol class="steps-list">
+                <li><span class="step-num">1</span><div><h4 data-i18n="step1_title">Parent Consultation</h4><p data-i18n="step1_desc">Schedule a friendly chat with our academic advisors to discuss your child's needs.</p></div></li>
+                <li><span class="step-num">2</span><div><h4 data-i18n="step2_title">School Tour</h4><p data-i18n="step2_desc">Visit our Klang center in-person or take a virtual tour from anywhere.</p></div></li>
+                <li><span class="step-num">3</span><div><h4 data-i18n="step3_title">Trial Class</h4><p data-i18n="step3_desc">Let your child experience a real lesson with our caring teachers.</p></div></li>
+                <li><span class="step-num">4</span><div><h4 data-i18n="step4_title">Academic Assessment</h4><p data-i18n="step4_desc">A gentle evaluation to understand your child's starting point and strengths.</p></div></li>
+                <li><span class="step-num">5</span><div><h4 data-i18n="step5_title">Enrollment Confirmation</h4><p data-i18n="step5_desc">Secure your child's place and begin the Sunrise journey!</p></div></li>
+            </ol>
+            <div style="text-align:center;margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+                <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn btn-gold" data-i18n="admissions_whatsapp">💬 WhatsApp Now</a>
+                <a href="#contact" class="btn btn-orange" data-i18n="admissions_book">📅 Book Appointment</a>
+                <button class="btn btn-outline" onclick="openAIChat()" data-i18n="admissions_apply">✍️ Apply Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Page -->
+    <section class="section reveal" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="vision_heading">Building Future Generations With Wisdom & Happiness</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="vision_sub">Our educational philosophy centers on happiness, moral values, creativity, and future AI innovation.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card"><span class="card-icon">💛</span><h3 data-i18n="vision1_title">Happiness First</h3><p data-i18n="vision1_desc">We believe happy children learn better. Joy is the foundation of our pedagogy.</p></div>
+                <div class="card"><span class="card-icon">⚖️</span><h3 data-i18n="vision2_title">Moral Values</h3><p data-i18n="vision2_desc">Integrity, respect, and compassion are woven into every lesson and interaction.</p></div>
+                <div class="card"><span class="card-icon">💡</span><h3 data-i18n="vision3_title">Creativity Unleashed</h3><p data-i18n="vision3_desc">Every child is a creator. We nurture original thinking and bold imagination.</p></div>
+                <div class="card"><span class="card-icon">🤖</span><h3 data-i18n="vision4_title">AI & Innovation</h3><p data-i18n="vision4_desc">Future-ready education with AI literacy, digital skills, and entrepreneurial mindset.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="section reveal" id="about" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about_heading">About Sunrise Education</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="about_sub">Founded with a mission to provide warm, world-class education that nurtures the whole child.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card"><span class="card-icon">👩‍💼</span><h3 data-i18n="about1_title">Founder's Message</h3><p data-i18n="about1_desc">"Sunrise was born from a simple belief: every child deserves to learn in an environment that feels like family."</p></div>
+                <div class="card"><span class="card-icon">👨‍🏫</span><h3 data-i18n="about2_title">Principal's Message</h3><p data-i18n="about2_desc">"Academic rigor and emotional warmth go hand-in-hand. Our students excel because they feel valued."</p></div>
+                <div class="card"><span class="card-icon">🌟</span><h3 data-i18n="about3_title">Our Culture</h3><p data-i18n="about3_desc">A close-knit community where teachers, parents, and students collaborate to create magic every day.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="section reveal" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_heading">☀️ Let's Connect</h2>
+                <div class="accent-line"></div>
+                <p data-i18n="contact_sub">We'd love to hear from you. Reach out through any channel below.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="contact-btn-card"><span class="c-icon">💬</span><span data-i18n="contact_whatsapp">WhatsApp</span></a>
+                <a href="tel:+60124251556" class="contact-btn-card"><span class="c-icon">📞</span><span data-i18n="contact_call">Call Now</span></a>
+                <a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener" class="contact-btn-card"><span class="c-icon">📘</span><span data-i18n="contact_facebook">Facebook</span></a>
+                <a href="https://www.instagram.com/sunrisecenters/" target="_blank" rel="noopener" class="contact-btn-card"><span class="c-icon">📷</span><span data-i18n="contact_instagram">Instagram</span></a>
+                <a href="mailto:LOVE@sun.edu.my" class="contact-btn-card"><span class="c-icon">✉️</span><span data-i18n="contact_email">Email Us</span></a>
+                <button class="contact-btn-card" onclick="openAIChat()"><span class="c-icon">🤖</span><span data-i18n="contact_ai">Ask AI Assistant</span></button>
+            </div>
+            <div class="card" style="max-width:700px;margin:24px auto;text-align:left;">
+                <h3 data-i18n="contact_klang_title">📍 Klang Center</h3>
+                <p style="color:var(--text-muted);font-size:0.9rem;" data-i18n="contact_klang_address">No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor, Malaysia</p>
+                <p style="color:var(--text-muted);font-size:0.85rem;margin-top:4px;" data-i18n="contact_hours">🕒 Office Hours: Mon–Fri 9am–5pm | Sat 9am–1pm</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=2.996279,101.445392&hl=en&z=16&output=embed" title="Sunrise Education Klang Center Location" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="nav-logo" style="justify-content:center;margin-bottom:10px;"><span class="logo-dot"></span> Sunrise Education</div>
+            <ul class="footer-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#academic" data-i18n="nav_academic">Academic</a></li>
+                <li><a href="#admissions" data-i18n="nav_admissions">Admissions</a></li>
+                <li><a href="#vision" data-i18n="nav_vision">Vision</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="https://ai.sun.edu.my" target="_blank" rel="noopener" data-i18n="footer_ai">AI Assistant</a></li>
+            </ul>
+            <p class="footer-copy" data-i18n="footer_copy">© 2026 Sunrise Education. All rights reserved. | LOVE@sun.edu.my</p>
+        </div>
+    </footer>
+
+    <!-- Floating Dock -->
+    <nav class="floating-dock" id="floatingDock">
+        <button class="dock-item active" data-target="home" data-i18n-title="dock_home" title="Home">🏠</button>
+        <button class="dock-item" data-target="academic" data-i18n-title="dock_academic" title="Academic">📚</button>
+        <button class="dock-item" data-target="admissions" data-i18n-title="dock_admissions" title="Admissions">🎓</button>
+        <button class="dock-item ai-dock" onclick="openAIChat()" data-i18n-title="dock_ai" title="AI Assistant">🤖</button>
+        <button class="dock-item" data-target="vision" data-i18n-title="dock_vision" title="Vision">💛</button>
+        <button class="dock-item" data-target="about" data-i18n-title="dock_about" title="About">👥</button>
+        <button class="dock-item" data-target="contact" data-i18n-title="dock_contact" title="Contact">📞</button>
+    </nav>
+
+    <!-- AI Chat Modal -->
+    <div class="ai-chat-modal" id="aiChatModal">
+        <div class="ai-chat-header">🤖 <span data-i18n="ai_title">Sunrise AI Assistant</span> <button class="close-chat" onclick="closeAIChat()">✕</button></div>
+        <div class="ai-chat-body" id="aiChatBody">
+            <div class="ai-msg bot" data-i18n="ai_welcome">👋 Hello! I'm the Sunrise AI Assistant. How can I help you today? You can ask about admissions, curriculum, trial classes, or anything about Sunrise Education!</div>
+        </div>
+        <div class="ai-chat-input-row">
+            <input type="text" id="aiChatInput" data-i18n-placeholder="ai_placeholder" placeholder="Ask me anything..." onkeydown="if(event.key=='Enter')sendAIMessage()">
+            <button onclick="sendAIMessage()">➤</button>
+        </div>
+    </div>
+
+    <script>
+        // === TRANSLATION DICTIONARY ===
+        const translations = {
+            en: {
+                nav_home: "Home", nav_academic: "Academic", nav_admissions: "Admissions", nav_vision: "Vision", nav_about: "About", nav_contact: "Contact",
+                hero_badge: "🌟 Admissions Open 2026",
+                hero_headline: "Where Children Smile, Learn & Grow Happily ☀️",
+                hero_sub: "A Warm International Homeschooling Environment for Future Leaders, Creative Thinkers & Happy Learners.",
+                hero_btn_explore: "📚 Explore Programs", hero_btn_admissions: "🎓 Admissions Open 2026", hero_btn_ai: "💬 Chat With AI", hero_btn_contact: "📞 Contact Us",
+                stat_age: "7–18", stat_igcse: "IGCSE", stat_small: "1:8", stat_future: "AI+",
+                stat_age_label: "Years Old", stat_igcse_label: "Cambridge", stat_small_label: "Small Classroom", stat_future_label: "Future‑Ready",
+                pillars_heading: "Happiness · Learning · Growth", pillars_sub: "Our four core pillars shape every child's journey at Sunrise.",
+                pillar1_title: "Happy Learning", pillar1_desc: "Joy-filled classrooms where curiosity thrives and every child feels safe to explore, ask, and grow.",
+                pillar2_title: "Character Growth", pillar2_desc: "Building integrity, empathy, and resilience through guided mentorship and real-world values.",
+                pillar3_title: "Academic Excellence", pillar3_desc: "Cambridge IGCSE pathway with personalized coaching that unlocks every learner's full potential.",
+                pillar4_title: "Future Readiness", pillar4_desc: "AI literacy, critical thinking, and innovation skills for a rapidly changing world.",
+                why_heading: "Why Parents Choose Sunrise", why_sub: "Caring teachers, personalized education, and a truly happy environment.",
+                why1_title: "Caring Teachers", why1_desc: "Dedicated educators who know each child by name, strength, and story.",
+                why2_title: "Personalized Education", why2_desc: "Custom learning paths that honor individual pace, interests, and goals.",
+                why3_title: "International Curriculum", why3_desc: "Globally recognized Cambridge IGCSE that opens doors worldwide.",
+                why4_title: "Happy Environment", why4_desc: "A warm, nurturing space where children genuinely love coming to school.",
+                life_heading: "Beyond Textbooks & Exams", life_sub: "Art, science, creativity, friendship — a vibrant student life awaits.",
+                life1_title: "Art & Creativity", life1_desc: "Expressive arts, design thinking, and creative projects that spark imagination.",
+                life2_title: "Science Exploration", life2_desc: "Hands-on experiments, STEM challenges, and curious discovery.",
+                life3_title: "Friendship & Community", life3_desc: "Collaborative activities that build lasting bonds and social confidence.",
+                life4_title: "Critical Thinking", life4_desc: "Debate, problem-solving, and communication skills for real-world success.",
+                testimonials_heading: "Parent Testimonials", testimonials_sub: "Hear from families who've found their home at Sunrise.",
+                testimonial1_quote: "\"Sunrise gave my daughter the confidence to speak up and love learning again. The teachers are truly exceptional.\"", testimonial1_author: "— Mrs. Lim, Klang",
+                testimonial2_quote: "\"The Cambridge IGCSE pathway here is outstanding. My son is thriving academically and socially.\"", testimonial2_author: "— Mr. Tan, Shah Alam",
+                testimonial3_quote: "\"Small class sizes mean my child gets the attention she needs. The environment is so warm and welcoming.\"", testimonial3_author: "— Pn. Aisyah, Klang",
+                testimonial4_quote: "\"We love the AI learning integration. It's preparing our children for the future in the best way possible.\"", testimonial4_author: "— Mr. & Mrs. Chen, Petaling Jaya",
+                academic_heading: "Cambridge International Education", academic_sub: "Globally recognized IGCSE curriculum designed for holistic excellence.",
+                subj_english: "English", subj_math: "Mathematics", subj_science: "Science", subj_biology: "Biology", subj_chemistry: "Chemistry", subj_physics: "Physics",
+                subj_ict: "ICT / Computer Studies", subj_history: "History", subj_geography: "Geography", subj_art: "Art & Creativity", subj_languages: "Language Programmes", subj_personalized: "Personalized Paths",
+                faq_heading: "Frequently Asked Questions",
+                faq1_q: "What is the Cambridge IGCSE?", faq1_a: "The Cambridge IGCSE is the world's most popular international qualification for 14–16 year olds. It is recognized by leading universities and employers worldwide.",
+                faq2_q: "What ages do you accept?", faq2_a: "We welcome students from ages 7 to 18, covering primary through secondary education with the Cambridge pathway.",
+                faq3_q: "How small are the classes?", faq3_a: "Our classes maintain a maximum 1:8 teacher-to-student ratio, ensuring every child receives personalized attention.",
+                faq4_q: "Do you offer trial classes?", faq4_a: "Yes! We encourage families to book a trial class so your child can experience our warm learning environment firsthand.",
+                admissions_heading: "Begin Your Child's Learning Journey", admissions_sub: "5 simple steps to enrollment at Sunrise Education.",
+                step1_title: "Parent Consultation", step1_desc: "Schedule a friendly chat with our academic advisors to discuss your child's needs.",
+                step2_title: "School Tour", step2_desc: "Visit our Klang center in-person or take a virtual tour from anywhere.",
+                step3_title: "Trial Class", step3_desc: "Let your child experience a real lesson with our caring teachers.",
+                step4_title: "Academic Assessment", step4_desc: "A gentle evaluation to understand your child's starting point and strengths.",
+                step5_title: "Enrollment Confirmation", step5_desc: "Secure your child's place and begin the Sunrise journey!",
+                admissions_whatsapp: "💬 WhatsApp Now", admissions_book: "📅 Book Appointment", admissions_apply: "✍️ Apply Today",
+                vision_heading: "Building Future Generations With Wisdom & Happiness", vision_sub: "Our educational philosophy centers on happiness, moral values, creativity, and future AI innovation.",
+                vision1_title: "Happiness First", vision1_desc: "We believe happy children learn better. Joy is the foundation of our pedagogy.",
+                vision2_title: "Moral Values", vision2_desc: "Integrity, respect, and compassion are woven into every lesson and interaction.",
+                vision3_title: "Creativity Unleashed", vision3_desc: "Every child is a creator. We nurture original thinking and bold imagination.",
+                vision4_title: "AI & Innovation", vision4_desc: "Future-ready education with AI literacy, digital skills, and entrepreneurial mindset.",
+                about_heading: "About Sunrise Education", about_sub: "Founded with a mission to provide warm, world-class education that nurtures the whole child.",
+                about1_title: "Founder's Message", about1_desc: "\"Sunrise was born from a simple belief: every child deserves to learn in an environment that feels like family.\"",
+                about2_title: "Principal's Message", about2_desc: "\"Academic rigor and emotional warmth go hand-in-hand. Our students excel because they feel valued.\"",
+                about3_title: "Our Culture", about3_desc: "A close-knit community where teachers, parents, and students collaborate to create magic every day.",
+                contact_heading: "☀️ Let's Connect", contact_sub: "We'd love to hear from you. Reach out through any channel below.",
+                contact_whatsapp: "WhatsApp", contact_call: "Call Now", contact_facebook: "Facebook", contact_instagram: "Instagram", contact_email: "Email Us", contact_ai: "Ask AI Assistant",
+                contact_klang_title: "📍 Klang Center", contact_klang_address: "No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor, Malaysia",
+                contact_hours: "🕒 Office Hours: Mon–Fri 9am–5pm | Sat 9am–1pm",
+                footer_ai: "AI Assistant", footer_copy: "© 2026 Sunrise Education. All rights reserved. | LOVE@sun.edu.my",
+                dock_home: "Home", dock_academic: "Academic", dock_admissions: "Admissions", dock_ai: "AI Assistant", dock_vision: "Vision", dock_about: "About", dock_contact: "Contact",
+                ai_title: "Sunrise AI Assistant", ai_welcome: "👋 Hello! I'm the Sunrise AI Assistant. How can I help you today? You can ask about admissions, curriculum, trial classes, or anything about Sunrise Education!",
+                ai_placeholder: "Ask me anything...",
+            },
+            zh: {
+                nav_home: "首页", nav_academic: "学术", nav_admissions: "招生", nav_vision: "愿景", nav_about: "关于", nav_contact: "联系",
+                hero_badge: "🌟 2026年招生开放",
+                hero_headline: "孩子们微笑、快乐学习与成长的地方 ☀️",
+                hero_sub: "一个温暖的国际家庭教育环境，培养未来的领导者、创意思想者和快乐学习者。",
+                hero_btn_explore: "📚 探索课程", hero_btn_admissions: "🎓 2026年招生开放", hero_btn_ai: "💬 与AI对话", hero_btn_contact: "📞 联系我们",
+                stat_age: "7–18", stat_igcse: "IGCSE", stat_small: "1:8", stat_future: "AI+",
+                stat_age_label: "岁", stat_igcse_label: "剑桥", stat_small_label: "小班制", stat_future_label: "面向未来",
+                pillars_heading: "快乐 · 学习 · 成长", pillars_sub: "四大核心支柱塑造每个孩子在Sunrise的旅程。",
+                pillar1_title: "快乐学习", pillar1_desc: "充满欢乐的课堂，好奇心蓬勃发展，每个孩子都感到安全探索、提问和成长。",
+                pillar2_title: "品格成长", pillar2_desc: "通过指导性的指导和现实世界的价值观，培养诚信、同理心和韧性。",
+                pillar3_title: "学术卓越", pillar3_desc: "剑桥IGCSE路径与个性化辅导，释放每个学习者的全部潜力。",
+                pillar4_title: "未来准备", pillar4_desc: "人工智能素养、批判性思维和创新技能，以应对快速变化的世界。",
+                why_heading: "为什么家长选择Sunrise", why_sub: "关爱教师、个性化教育和真正快乐的环境。",
+                why1_title: "关爱教师", why1_desc: "敬业的教育者，了解每个孩子的名字、优势和故事。",
+                why2_title: "个性化教育", why2_desc: "定制的学习路径，尊重个人的步伐、兴趣和目标。",
+                why3_title: "国际课程", why3_desc: "全球认可的剑桥IGCSE，为全球机会打开大门。",
+                why4_title: "快乐环境", why4_desc: "一个温暖、培育的空间，孩子们真正热爱来学校。",
+                life_heading: "超越课本与考试", life_sub: "艺术、科学、创造力、友谊——充满活力的学生生活等着你。",
+                life1_title: "艺术与创意", life1_desc: "表达性艺术、设计思维和激发想象力的创意项目。",
+                life2_title: "科学探索", life2_desc: "动手实验、STEM挑战和好奇心的发现。",
+                life3_title: "友谊与社区", life3_desc: "建立持久纽带和社交信心的协作活动。",
+                life4_title: "批判性思维", life4_desc: "辩论、解决问题和沟通技巧，为现实世界的成功。",
+                testimonials_heading: "家长推荐", testimonials_sub: "听听那些在Sunrise找到归属的家庭怎么说。",
+                testimonial1_quote: "\"Sunrise让我的女儿重拾自信，敢于表达并重新爱上学习。老师们真的非常出色。\"", testimonial1_author: "— 林太太, 巴生",
+                testimonial2_quote: "\"这里的剑桥IGCSE路径非常出色。我的儿子在学业和社交上都茁壮成长。\"", testimonial2_author: "— 陈先生, 莎阿南",
+                testimonial3_quote: "\"小班教学让我的孩子得到了她需要的关注。环境非常温暖和欢迎。\"", testimonial3_author: "— Aisyah女士, 巴生",
+                testimonial4_quote: "\"我们喜欢AI学习的整合。它正在以最好的方式为孩子们的未来做准备。\"", testimonial4_author: "— 陈氏夫妇, 八打灵再也",
+                academic_heading: "剑桥国际教育", academic_sub: "全球认可的IGCSE课程，为全面卓越而设计。",
+                subj_english: "英语", subj_math: "数学", subj_science: "科学", subj_biology: "生物", subj_chemistry: "化学", subj_physics: "物理",
+                subj_ict: "ICT / 计算机研究", subj_history: "历史", subj_geography: "地理", subj_art: "艺术与创意", subj_languages: "语言课程", subj_personalized: "个性化路径",
+                faq_heading: "常见问题",
+                faq1_q: "什么是剑桥IGCSE?", faq1_a: "剑桥IGCSE是全球最受欢迎的14至16岁国际资格证书，受到世界各地顶尖大学和雇主的认可。",
+                faq2_q: "你们接受几岁的学生?", faq2_a: "我们欢迎7至18岁的学生，涵盖小学到中学的剑桥课程。",
+                faq3_q: "班级规模有多小?", faq3_a: "我们保持最多1:8的师生比，确保每个孩子都得到个性化的关注。",
+                faq4_q: "你们提供试课吗?", faq4_a: "是的！我们鼓励家庭预约试课，让您的孩子亲身体验我们温暖的学习环境。",
+                admissions_heading: "开启您孩子的学习之旅", admissions_sub: "5个简单的步骤即可入读Sunrise教育。",
+                step1_title: "家长咨询", step1_desc: "与我们的学术顾问安排一次友好的交谈，讨论您孩子的需求。",
+                step2_title: "学校参观", step2_desc: "亲临我们的巴生中心或从任何地方进行虚拟参观。",
+                step3_title: "试课", step3_desc: "让您的孩子体验一堂由我们爱心老师授课的真实课程。",
+                step4_title: "学术评估", step4_desc: "一个温和的评估，了解您孩子的起点和优势。",
+                step5_title: "入学确认", step5_desc: "确保您孩子的学位并开始Sunrise之旅！",
+                admissions_whatsapp: "💬 立即WhatsApp", admissions_book: "📅 预约参观", admissions_apply: "✍️ 立即申请",
+                vision_heading: "以智慧和快乐建设未来一代", vision_sub: "我们的教育理念以快乐、道德价值观、创造力和未来AI创新为中心。",
+                vision1_title: "快乐至上", vision1_desc: "我们相信快乐的孩子学得更好。快乐是我们教学法的基础。",
+                vision2_title: "道德价值观", vision2_desc: "诚信、尊重和同情心融入每一堂课和每一次互动。",
+                vision3_title: "释放创造力", vision3_desc: "每个孩子都是创造者。我们培养原创思维和大胆的想象力。",
+                vision4_title: "AI与创新", vision4_desc: "为未来做好准备的教育，包括AI素养、数字技能和创业心态。",
+                about_heading: "关于Sunrise教育", about_sub: "创立使命是提供温暖、世界一流的教育，培育全人孩子。",
+                about1_title: "创始人的话", about1_desc: "\"Sunrise源于一个简单的信念：每个孩子都应该在一个像家一样的环境中学习。\"",
+                about2_title: "校长的话", about2_desc: "\"学术严谨与情感温暖并驾齐驱。我们的学生因为感到被重视而出类拔萃。\"",
+                about3_title: "我们的文化", about3_desc: "一个紧密团结的社区，教师、家长和学生每天合作创造奇迹。",
+                contact_heading: "☀️ 让我们联系", contact_sub: "我们很乐意听到你的声音。通过以下任何渠道联系我们。",
+                contact_whatsapp: "WhatsApp", contact_call: "立即致电", contact_facebook: "Facebook", contact_instagram: "Instagram", contact_email: "邮件联系", contact_ai: "询问AI助手",
+                contact_klang_title: "📍 巴生中心", contact_klang_address: "No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor, Malaysia",
+                contact_hours: "🕒 办公时间: 周一至周五 9am–5pm | 周六 9am–1pm",
+                footer_ai: "AI助手", footer_copy: "© 2026 Sunrise Education. 版权所有。| LOVE@sun.edu.my",
+                dock_home: "首页", dock_academic: "学术", dock_admissions: "招生", dock_ai: "AI助手", dock_vision: "愿景", dock_about: "关于", dock_contact: "联系",
+                ai_title: "Sunrise AI助手", ai_welcome: "👋 你好！我是Sunrise AI助手。今天有什么可以帮助你的？你可以询问招生、课程、试课或任何关于Sunrise教育的问题！",
+                ai_placeholder: "问我任何问题...",
+            },
+            ms: {
+                nav_home: "Laman Utama", nav_academic: "Akademik", nav_admissions: "Kemasukan", nav_vision: "Visi", nav_about: "Tentang", nav_contact: "Hubungi",
+                hero_badge: "🌟 Kemasukan Dibuka 2026",
+                hero_headline: "Tempat Anak-Anak Tersenyum, Belajar & Membesar Dengan Gembira ☀️",
+                hero_sub: "Persekitaran Pendidikan Di Rumah Antarabangsa yang Mesra untuk Pemimpin Masa Depan, Pemikir Kreatif & Pelajar Gembira.",
+                hero_btn_explore: "📚 Terokai Program", hero_btn_admissions: "🎓 Kemasukan Dibuka 2026", hero_btn_ai: "💬 Sembang Dengan AI", hero_btn_contact: "📞 Hubungi Kami",
+                stat_age: "7–18", stat_igcse: "IGCSE", stat_small: "1:8", stat_future: "AI+",
+                stat_age_label: "Tahun", stat_igcse_label: "Cambridge", stat_small_label: "Kelas Kecil", stat_future_label: "Sedia Masa Depan",
+                pillars_heading: "Kegembiraan · Pembelajaran · Pertumbuhan", pillars_sub: "Empat teras utama kami membentuk perjalanan setiap kanak-kanak di Sunrise.",
+                pillar1_title: "Pembelajaran Gembira", pillar1_desc: "Kelas penuh kegembiraan di mana rasa ingin tahu berkembang dan setiap kanak-kanak berasa selamat untuk meneroka, bertanya, dan berkembang.",
+                pillar2_title: "Pertumbuhan Sahsiah", pillar2_desc: "Membina integriti, empati, dan daya tahan melalui bimbingan berpandu dan nilai-nilai dunia sebenar.",
+                pillar3_title: "Kecemerlangan Akademik", pillar3_desc: "Laluan Cambridge IGCSE dengan bimbingan peribadi yang membuka potensi penuh setiap pelajar.",
+                pillar4_title: "Kesediaan Masa Depan", pillar4_desc: "Literasi AI, pemikiran kritis, dan kemahiran inovasi untuk dunia yang berubah dengan pantas.",
+                why_heading: "Mengapa Ibu Bapa Memilih Sunrise", why_sub: "Guru penyayang, pendidikan peribadi, dan persekitaran yang benar-benar gembira.",
+                why1_title: "Guru Penyayang", why1_desc: "Pendidik berdedikasi yang mengenali setiap kanak-kanak dengan nama, kekuatan, dan cerita.",
+                why2_title: "Pendidikan Peribadi", why2_desc: "Laluan pembelajaran tersuai yang menghormati rentak, minat, dan matlamat individu.",
+                why3_title: "Kurikulum Antarabangsa", why3_desc: "IGCSE Cambridge yang diiktiraf global yang membuka pintu di seluruh dunia.",
+                why4_title: "Persekitaran Gembira", why4_desc: "Ruang yang mesra dan penyayang di mana kanak-kanak benar-benar suka datang ke sekolah.",
+                life_heading: "Melangkaui Buku Teks & Peperiksaan", life_sub: "Seni, sains, kreativiti, persahabatan — kehidupan pelajar yang bertenaga menanti.",
+                life1_title: "Seni & Kreativiti", life1_desc: "Seni ekspresif, pemikiran reka bentuk, dan projek kreatif yang mencetuskan imaginasi.",
+                life2_title: "Penerokaan Sains", life2_desc: "Eksperimen hands-on, cabaran STEM, dan penemuan yang ingin tahu.",
+                life3_title: "Persahabatan & Komuniti", life3_desc: "Aktiviti kolaboratif yang membina ikatan berkekalan dan keyakinan sosial.",
+                life4_title: "Pemikiran Kritis", life4_desc: "Perbahasan, penyelesaian masalah, dan kemahiran komunikasi untuk kejayaan dunia sebenar.",
+                testimonials_heading: "Testimoni Ibu Bapa", testimonials_sub: "Dengar daripada keluarga yang telah menemui rumah mereka di Sunrise.",
+                testimonial1_quote: "\"Sunrise memberi keyakinan kepada anak perempuan saya untuk bersuara dan mencintai pembelajaran semula. Guru-gurunya sungguh luar biasa.\"", testimonial1_author: "— Pn. Lim, Klang",
+                testimonial2_quote: "\"Laluan Cambridge IGCSE di sini sangat cemerlang. Anak lelaki saya berkembang maju dari segi akademik dan sosial.\"", testimonial2_author: "— En. Tan, Shah Alam",
+                testimonial3_quote: "\"Saiz kelas yang kecil bermakna anak saya mendapat perhatian yang diperlukannya. Persekitarannya sangat mesra dan mengalu-alukan.\"", testimonial3_author: "— Pn. Aisyah, Klang",
+                testimonial4_quote: "\"Kami suka integrasi pembelajaran AI. Ia menyediakan anak-anak kami untuk masa depan dengan cara yang terbaik.\"", testimonial4_author: "— En. & Pn. Chen, Petaling Jaya",
+                academic_heading: "Pendidikan Antarabangsa Cambridge", academic_sub: "Kurikulum IGCSE yang diiktiraf global direka untuk kecemerlangan holistik.",
+                subj_english: "Bahasa Inggeris", subj_math: "Matematik", subj_science: "Sains", subj_biology: "Biologi", subj_chemistry: "Kimia", subj_physics: "Fizik",
+                subj_ict: "ICT / Pengajian Komputer", subj_history: "Sejarah", subj_geography: "Geografi", subj_art: "Seni & Kreativiti", subj_languages: "Program Bahasa", subj_personalized: "Laluan Peribadi",
+                faq_heading: "Soalan Lazim",
+                faq1_q: "Apakah IGCSE Cambridge?", faq1_a: "IGCSE Cambridge adalah kelayakan antarabangsa paling popular di dunia untuk pelajar berumur 14–16 tahun. Ia diiktiraf oleh universiti dan majikan terkemuka di seluruh dunia.",
+                faq2_q: "Umur berapa yang anda terima?", faq2_a: "Kami menerima pelajar berumur 7 hingga 18 tahun, meliputi pendidikan rendah hingga menengah dengan laluan Cambridge.",
+                faq3_q: "Seberapa kecil saiz kelas?", faq3_a: "Kelas kami mengekalkan nisbah maksimum 1:8 guru kepada pelajar, memastikan setiap kanak-kanak menerima perhatian peribadi.",
+                faq4_q: "Adakah anda menawarkan kelas percubaan?", faq4_a: "Ya! Kami menggalakkan keluarga untuk menempah kelas percubaan supaya anak anda dapat merasai sendiri persekitaran pembelajaran mesra kami.",
+                admissions_heading: "Mulakan Perjalanan Pembelajaran Anak Anda", admissions_sub: "5 langkah mudah untuk pendaftaran di Sunrise Education.",
+                step1_title: "Perundingan Ibu Bapa", step1_desc: "Jadualkan perbualan mesra dengan penasihat akademik kami untuk membincangkan keperluan anak anda.",
+                step2_title: "Lawatan Sekolah", step2_desc: "Lawati pusat Klang kami secara bersemuka atau ikuti lawatan maya dari mana-mana sahaja.",
+                step3_title: "Kelas Percubaan", step3_desc: "Biarkan anak anda merasai pelajaran sebenar bersama guru penyayang kami.",
+                step4_title: "Penilaian Akademik", step4_desc: "Penilaian lembut untuk memahami titik permulaan dan kekuatan anak anda.",
+                step5_title: "Pengesahan Pendaftaran", step5_desc: "Dapatkan tempat anak anda dan mulakan perjalanan Sunrise!",
+                admissions_whatsapp: "💬 WhatsApp Sekarang", admissions_book: "📅 Tempah Temujanji", admissions_apply: "✍️ Mohon Hari Ini",
+                vision_heading: "Membina Generasi Masa Depan Dengan Kebijaksanaan & Kegembiraan", vision_sub: "Falsafah pendidikan kami berpusatkan kegembiraan, nilai moral, kreativiti, dan inovasi AI masa depan.",
+                vision1_title: "Kegembiraan Diutamakan", vision1_desc: "Kami percaya kanak-kanak yang gembira belajar dengan lebih baik. Kegembiraan adalah asas pedagogi kami.",
+                vision2_title: "Nilai Moral", vision2_desc: "Integriti, hormat, dan belas kasihan ditenun dalam setiap pelajaran dan interaksi.",
+                vision3_title: "Kreativiti Dilepaskan", vision3_desc: "Setiap kanak-kanak adalah pencipta. Kami memupuk pemikiran asli dan imaginasi berani.",
+                vision4_title: "AI & Inovasi", vision4_desc: "Pendidikan sedia masa depan dengan literasi AI, kemahiran digital, dan minda keusahawanan.",
+                about_heading: "Tentang Sunrise Education", about_sub: "Ditubuhkan dengan misi menyediakan pendidikan bertaraf dunia yang mesra dan memupuk seluruh kanak-kanak.",
+                about1_title: "Mesej Pengasas", about1_desc: "\"Sunrise lahir dari kepercayaan mudah: setiap kanak-kanak berhak belajar dalam persekitaran yang terasa seperti keluarga.\"",
+                about2_title: "Mesej Pengetua", about2_desc: "\"Ketegasan akademik dan kehangatan emosi berjalan seiring. Pelajar kami cemerlang kerana mereka merasa dihargai.\"",
+                about3_title: "Budaya Kami", about3_desc: "Komuniti erat di mana guru, ibu bapa, dan pelajar bekerjasama mencipta keajaiban setiap hari.",
+                contact_heading: "☀️ Mari Berhubung", contact_sub: "Kami ingin mendengar daripada anda. Hubungi melalui mana-mana saluran di bawah.",
+                contact_whatsapp: "WhatsApp", contact_call: "Hubungi Sekarang", contact_facebook: "Facebook", contact_instagram: "Instagram", contact_email: "E-mel Kami", contact_ai: "Tanya Pembantu AI",
+                contact_klang_title: "📍 Pusat Klang", contact_klang_address: "No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor, Malaysia",
+                contact_hours: "🕒 Waktu Pejabat: Isnin–Jumaat 9pg–5ptg | Sabtu 9pg–1ptg",
+                footer_ai: "Pembantu AI", footer_copy: "© 2026 Sunrise Education. Hak cipta terpelihara. | LOVE@sun.edu.my",
+                dock_home: "Laman Utama", dock_academic: "Akademik", dock_admissions: "Kemasukan", dock_ai: "Pembantu AI", dock_vision: "Visi", dock_about: "Tentang", dock_contact: "Hubungi",
+                ai_title: "Pembantu AI Sunrise", ai_welcome: "👋 Halo! Saya Pembantu AI Sunrise. Bolehkah saya bantu anda hari ini? Anda boleh bertanya tentang kemasukan, kurikulum, kelas percubaan, atau apa-apa tentang Sunrise Education!",
+                ai_placeholder: "Tanya saya apa-apa...",
+            }
+        };
+
+        // Apply language to all elements with data-i18n
+        function applyLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.dataset.i18n;
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            // Placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.dataset.i18nPlaceholder;
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    el.placeholder = translations[lang][key];
+                }
+            });
+            // Titles on dock items
+            document.querySelectorAll('[data-i18n-title]').forEach(el => {
+                const key = el.dataset.i18nTitle;
+                if (translations[lang] && translations[lang][key] !== undefined) {
+                    el.title = translations[lang][key];
+                }
+            });
+            // Update AI chat welcome if chat is empty or only contains the original bot message
+            const chatBody = document.getElementById('aiChatBody');
+            if (chatBody && chatBody.children.length === 1 && chatBody.firstElementChild.classList.contains('bot')) {
+                chatBody.firstElementChild.textContent = translations[lang].ai_welcome;
+            }
+            // Update lang toggle button text
+            document.getElementById('langToggle').textContent = lang === 'zh' ? '中文' : (lang === 'ms' ? 'BM' : 'EN');
+        }
+
+        function cycleLanguage() {
+            const current = localStorage.getItem('sunrise-lang') || 'en';
+            const order = ['en', 'zh', 'ms'];
+            let nextIndex = (order.indexOf(current) + 1) % order.length;
+            const newLang = order[nextIndex];
+            localStorage.setItem('sunrise-lang', newLang);
+            applyLanguage(newLang);
+            showToast(newLang === 'zh' ? '语言已切换至中文' : (newLang === 'ms' ? 'Bahasa ditukar kepada Melayu' : 'Language switched to English'));
+        }
+
+        // Initial load
+        const savedLang = localStorage.getItem('sunrise-lang') || 'en';
+        applyLanguage(savedLang);
+
+        document.getElementById('langToggle').addEventListener('click', cycleLanguage);
+
+        // === Theme Management ===
+        const html = document.documentElement;
+        const themeBtn = document.getElementById('themeBtn');
+        const themeDropdown = document.getElementById('themeDropdown');
+        const themeButtons = themeDropdown.querySelectorAll('button[data-theme]');
+
+        function setTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('sunrise-theme', theme);
+            themeButtons.forEach(b => b.classList.remove('active-theme'));
+            const activeBtn = themeDropdown.querySelector(`[data-theme="${theme}"]`);
+            if (activeBtn) activeBtn.classList.add('active-theme');
+            const emoji = { dark: '🌙', light: '☀️', warm: '🔥' };
+            themeBtn.textContent = emoji[theme] || '🌓';
+        }
+        const savedTheme = localStorage.getItem('sunrise-theme') || 'dark';
+        setTheme(savedTheme);
+
+        themeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            themeDropdown.classList.toggle('open');
+        });
+        themeButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                setTheme(btn.dataset.theme);
+                themeDropdown.classList.remove('open');
+            });
+        });
+        document.addEventListener('click', () => themeDropdown.classList.remove('open'));
+
+        // === Toast ===
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2200);
+        }
+
+        // === AI Chat ===
+        const aiChatModal = document.getElementById('aiChatModal');
+        const overlayBg = document.getElementById('overlayBg');
+        const aiChatBody = document.getElementById('aiChatBody');
+        const aiChatInput = document.getElementById('aiChatInput');
+        const currentLang = () => localStorage.getItem('sunrise-lang') || 'en';
+
+        const aiResponses = {
+            en: [
+                "Great question! At Sunrise, we offer Cambridge IGCSE for ages 7–18 with small class sizes (max 1:8). Would you like to know about admissions?",
+                "Our admissions process is simple: 1) Parent Consultation, 2) School Tour, 3) Trial Class, 4) Academic Assessment, 5) Enrollment. Ready to start?",
+                "We're located at No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor. You can also WhatsApp us at +60 12-425 1556!",
+                "Sunrise focuses on four core pillars: Happy Learning, Character Growth, Academic Excellence, and Future Readiness. Every child is nurtured holistically.",
+                "Yes! We offer trial classes so your child can experience our warm learning environment. Would you like to book one?",
+                "Our fees are competitive and we offer flexible payment plans. The best way is to schedule a consultation — would you like me to help with that?",
+                "Sunrise integrates AI literacy and digital skills across the curriculum, preparing students for a rapidly evolving future.",
+            ],
+            zh: [
+                "好问题！在Sunrise，我们为7-18岁学生提供剑桥IGCSE，小班教学（最多1:8）。您想了解招生吗？",
+                "我们的招生流程很简单：1) 家长咨询，2) 学校参观，3) 试课，4) 学术评估，5) 入学确认。准备开始了吗？",
+                "我们位于雪兰莪州巴生市Jalan Mahogani 5/Ks7 25号2楼。您也可以WhatsApp我们 +60 12-425 1556！",
+                "Sunrise专注于四大支柱：快乐学习、品格成长、学术卓越和未来准备。每个孩子都得到全面培养。",
+                "是的！我们提供试课，让您的孩子体验我们温暖的学习环境。您想预约吗？",
+                "我们的学费有竞争力，并提供灵活的付款计划。最好的方式是预约咨询——需要我帮忙吗？",
+                "Sunrise将AI素养和数字技能融入整个课程，为学生迎接快速发展的未来做好准备。",
+            ],
+            ms: [
+                "Soalan yang bagus! Di Sunrise, kami menawarkan Cambridge IGCSE untuk umur 7-18 tahun dengan saiz kelas kecil (maks 1:8). Adakah anda ingin tahu tentang kemasukan?",
+                "Proses kemasukan kami mudah: 1) Perundingan Ibu Bapa, 2) Lawatan Sekolah, 3) Kelas Percubaan, 4) Penilaian Akademik, 5) Pendaftaran. Bersedia untuk mula?",
+                "Kami terletak di No. 25-2nd Floor, Jalan Mahogani 5/Ks7, 41200 Klang, Selangor. Anda juga boleh WhatsApp kami di +60 12-425 1556!",
+                "Sunrise memberi tumpuan kepada empat teras utama: Pembelajaran Gembira, Pertumbuhan Sahsiah, Kecemerlangan Akademik, dan Kesediaan Masa Depan. Setiap kanak-kanak dipupuk secara holistik.",
+                "Ya! Kami menawarkan kelas percubaan supaya anak anda dapat merasai persekitaran pembelajaran mesra kami. Adakah anda ingin menempah satu?",
+                "Yuran kami kompetitif dan kami menawarkan pelan pembayaran fleksibel. Cara terbaik adalah menjadualkan perundingan — boleh saya bantu?",
+                "Sunrise mengintegrasikan literasi AI dan kemahiran digital merentas kurikulum, menyediakan pelajar untuk masa depan yang berkembang pesat.",
+            ]
+        };
+
+        function openAIChat() {
+            aiChatModal.classList.add('open');
+            overlayBg.classList.add('show');
+            setTimeout(() => aiChatInput.focus(), 300);
+        }
+
+        function closeAIChat() {
+            aiChatModal.classList.remove('open');
+            overlayBg.classList.remove('show');
+        }
+        overlayBg.addEventListener('click', closeAIChat);
+
+        function sendAIMessage() {
+            const msg = aiChatInput.value.trim();
+            if (!msg) return;
+            const userDiv = document.createElement('div');
+            userDiv.className = 'ai-msg user';
+            userDiv.textContent = msg;
+            aiChatBody.appendChild(userDiv);
+            aiChatInput.value = '';
+            aiChatBody.scrollTop = aiChatBody.scrollHeight;
+            const lang = currentLang();
+            const responses = aiResponses[lang] || aiResponses.en;
+            const randomReply = responses[Math.floor(Math.random() * responses.length)];
+            setTimeout(() => {
+                const botDiv = document.createElement('div');
+                botDiv.className = 'ai-msg bot';
+                botDiv.textContent = randomReply;
+                aiChatBody.appendChild(botDiv);
+                aiChatBody.scrollTop = aiChatBody.scrollHeight;
+            }, 600 + Math.random() * 800);
+        }
+
+        // === Particles ===
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const maxParticles = 70;
+
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        function createParticle() {
+            return {
+                x: Math.random() * canvas.width,
+                y: canvas.height + 20,
+                r: Math.random() * 3 + 1.2,
+                speedY: Math.random() * 1.2 + 0.4,
+                speedX: (Math.random() - 0.5) * 0.6,
+                opacity: Math.random() * 0.6 + 0.3,
+                life: Math.random() * 300 + 200,
+                maxLife: 500,
+            };
+        }
+        for (let i = 0; i < maxParticles; i++) {
+            const p = createParticle();
+            p.y = Math.random() * canvas.height;
+            p.life = Math.random() * p.maxLife;
+            particles.push(p);
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const style = getComputedStyle(document.documentElement);
+            const particleColor = style.getPropertyValue('--particle-color').trim() || 'rgba(253,184,19,0.7)';
+            particles.forEach((p, i) => {
+                p.y -= p.speedY;
+                p.x += p.speedX;
+                p.life--;
+                if (p.life <= 0 || p.y < -20 || p.x < -20 || p.x > canvas.width + 20) {
+                    particles[i] = createParticle();
+                }
+                const alpha = Math.min(p.opacity, p.life / p.maxLife);
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                let color = particleColor;
+                if (particleColor.startsWith('rgba')) {
+                    const parts = particleColor.match(/rgba\((\d+),\s*(\d+),\s*(\d+)/);
+                    if (parts) {
+                        color = `rgba(${parts[1]},${parts[2]},${parts[3]},${alpha})`;
+                    }
+                }
+                ctx.fillStyle = color;
+                ctx.fill();
+                if (p.r > 2) {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r * 2.5, 0, Math.PI * 2);
+                    ctx.fillStyle = color.replace(/[\d.]+\)$/, (alpha * 0.15) + ')');
+                    ctx.fill();
+                }
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // === Scroll Reveal ===
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => observer.observe(el));
+
+        // === Glass Nav Scroll Effect ===
+        const glassNav = document.getElementById('glassNav');
+        window.addEventListener('scroll', () => {
+            glassNav.classList.toggle('scrolled', window.scrollY > 40);
+            updateActiveNavLink();
+        });
+
+        // === Active Nav Link ===
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksAll = document.querySelectorAll('#navLinks a');
+            const dockItems = document.querySelectorAll('.dock-item[data-target]');
+            let current = 'home';
+            sections.forEach(sec => {
+                const top = sec.offsetTop - 120;
+                if (window.scrollY >= top) current = sec.id;
+            });
+            navLinksAll.forEach(a => a.classList.remove('active'));
+            const activeNav = document.querySelector(`#navLinks a[href="#${current}"]`);
+            if (activeNav) activeNav.classList.add('active');
+            dockItems.forEach(d => d.classList.remove('active'));
+            const activeDock = document.querySelector(`.dock-item[data-target="${current}"]`);
+            if (activeDock) activeDock.classList.add('active');
+        }
+
+        // === Dock Navigation ===
+        document.querySelectorAll('.dock-item[data-target]').forEach(item => {
+            item.addEventListener('click', () => {
+                const target = document.getElementById(item.dataset.target);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // === Accordion ===
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                if (!wasActive) item.classList.add('active');
+            });
+        });
+
+        updateActiveNavLink();
+        console.log('☀️ Sunrise Education — Multi‑language ready');
+    </script>
+</body>
+</html>
